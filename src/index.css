@@ -1,0 +1,131 @@
+:root{
+  --navbar-bg:rgba(0,0,0,.8);
+  --intro-bg:#1abc9c;
+}
+
+.active{
+  background-color:var(--intro-bg);
+  border-radius: 4px;
+}
+.active.nav-link:hover{
+  color: #fff !important;
+}
+.navbar{
+  background-color: var(--navbar-bg) !important;
+}
+.nav-link,.navbar-brand{
+  font-weight: 600;
+  transition: .3s;
+}
+.navbar-brand{
+  font-size: 22px;
+}
+.nav-link:hover{
+  color: #1abc9c !important;
+}
+
+.intro{
+  background-color: var(--intro-bg);
+  height: 85vh;
+}
+.intro p{
+  font-weight: 500;
+}
+.star{
+  font-size: 35px;
+}
+.line{
+  display: inline-block;
+  background-color: #fff;
+  height: 3px;
+  width: 60px;
+  border-radius: 2px;
+}
+
+
+.portfolio h2{
+  font-size: 30px;
+  color: var(--navbar-bg);
+}
+.portfolio .line,.contact .line{
+  background-color: var(--navbar-bg);
+}
+.img {
+  position: relative;
+}
+.img:hover .layer{
+  height: 100%;
+  border-radius: 8px;
+}
+.img:hover  span{
+  display: inline !important;
+}
+.layer{
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 94%;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  background-color: #1abc9cea;
+}
+.about{
+  background-color: var(--intro-bg);
+  height: 60vh;
+}
+.about button{
+  border: 2px solid #fff;
+}
+.about button:hover{
+ background-color: #fff;
+ color: #000 !important;
+ border: none;
+}
+input,textarea{
+  width: 420px;
+  padding: 10px 20px 24px;
+  border: none;
+  border-bottom:1px solid gray;
+}
+textarea{
+  resize: none;
+}
+input:focus,textarea:focus{
+  outline: none;
+  border: none !important;
+  border-bottom: 1px solid var(--intro-bg) !important;
+}
+.contact button{
+  background-color: var(--intro-bg);
+  margin-left: 370px;
+}
+footer{
+  background-color: var(--navbar-bg);
+}
+footer h3{
+  font-size: 20px;
+}
+footer p span{
+  color: var(--intro-bg) ;
+  text-decoration: underline;
+}
+footer .right{
+  background-color: #000;
+}
+.icon i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50% ;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s;
+  padding: 3px;
+}
+.icon i:hover{
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
